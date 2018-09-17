@@ -40,10 +40,10 @@ app.get('/subjects', function (req, res) {
             res.render('pages/subjects', { subjects: rows })
         
         console.log(rows);
-        
+           connection.end()
     })
     
-    connection.end()
+ 
     });
     
 console.log('App is running at http://localhost:8080');
