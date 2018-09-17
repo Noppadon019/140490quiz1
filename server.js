@@ -44,7 +44,7 @@ app.get('/students', function (req, res) {
 
     app.get('/subjects', function (req, res) {
 
-        res.render('pages/subjects', { students: data2 })
+        res.render('pages/subjects', { subject: data2 })
     });
     
 console.log('App is running at http://localhost:8080');
