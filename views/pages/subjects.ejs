@@ -2,19 +2,21 @@
 <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>email</th>
-                <th>password</th>
+                <th>code</th>
+                <th>title</th>
+                <th>credits</th>
+                <th>sections</th>
             </tr>
         </thead>
         <tbody>
         
-    <% users.forEach(function(user){ %>
+    <% subjects.forEach(function(subject){ %>
     
             <tr>
-                <td scope="row"><%= user.id %></td>
-                <td><%= user.email %></td>
-                <td><%= user.password %></td>
+                <td scope="row"><%= subject.id %></td>
+                <td><%= subject.title %></td>
+                <td><%= subject.credits %></td>
+                  <td><%= subject.sections %></td>
             </tr>
             <tr>
                 <td scope="row"></td>
@@ -25,7 +27,3 @@
         </tbody>
     
     </table>
-
-
-
-<% include ../partials/footer %>
